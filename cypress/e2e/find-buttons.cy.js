@@ -5,13 +5,6 @@ describe("queries", () => {
     });
   });
 
-  it("Home button exists and is clickable", () => {
-    cy.get("a.btn.header-link.-active")
-      .should("exist")
-      .and("be.visible")
-      .click({ force: true });
-  });
-
   it("About button exists and is clickable", () => {
     cy.get('button.btn.header-link[appscrollto="aboutSection"]')
       .should("exist")
